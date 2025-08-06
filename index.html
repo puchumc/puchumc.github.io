@@ -2,113 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Puchu.MC Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #87CEEB;
-      color: #fff;
-      margin: 0;
-      padding: 2rem;
-      text-align: center;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-    }
-    button {
-      background: #004080;
-      border: none;
-      padding: 12px 24px;
-      font-size: 1.2rem;
-      color: #fff;
-      border-radius: 6px;
-      cursor: pointer;
-      margin: 1rem 0;
-      transition: background 0.3s ease;
-    }
-    button:hover {
-      background: #0066cc;
-    }
-    #gallery {
-      margin-top: 2rem;
-      display: none; /* hidden by default */
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: left;
-    }
-    .gallery-title {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #004080;
-      text-align: center;
-      text-shadow: none;
-    }
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-      gap: 1rem;
-    }
-    .gallery-item {
-      background: #fff;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 0 8px rgba(0,0,0,0.2);
-    }
-    .gallery-item img {
-      width: 100%;
-      display: block;
-      border-bottom: 3px solid #004080;
-    }
-    .gallery-item p {
-      margin: 0.5rem;
-      color: #004080;
-      font-weight: bold;
-      text-align: center;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Game Cards</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Puchu.MC</h1>
-  <p>Welcome to my Minecraft Portfolio</p>
-  <button id="learnMoreBtn">Learn More</button>
 
-  <div id="gallery">
-    <h2 class="gallery-title">Past Work</h2>
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="https://via.placeholder.com/150?text=Project+1" alt="Project 1" />
-        <p>Survival Island</p>
-      </div>
-      <div class="gallery-item">
-        <img src="https://via.placeholder.com/150?text=Project+2" alt="Project 2" />
-        <p>Nyx Plugin System</p>
-      </div>
-      <div class="gallery-item">
-        <img src="https://via.placeholder.com/150?text=Project+3" alt="Project 3" />
-        <p>Skyblock Expansion</p>
-      </div>
-      <div class="gallery-item">
-        <img src="https://via.placeholder.com/150?text=Project+4" alt="Project 4" />
-        <p>Custom Mobs</p>
-      </div>
-    </div>
+  <div class="game-card valorant">
+    <div class="game-title">Valorant</div>
   </div>
 
-  <script>
-    const btn = document.getElementById('learnMoreBtn');
-    const gallery = document.getElementById('gallery');
-    btn.addEventListener('click', () => {
-      if (gallery.style.display === 'none' || gallery.style.display === '') {
-        gallery.style.display = 'block';
-        btn.textContent = 'Show Less';
-      } else {
-        gallery.style.display = 'none';
-        btn.textContent = 'Learn More';
-      }
-    });
-  </script>
+  <div class="game-card minecraft">
+    <div class="game-title">Minecraft</div>
+  </div>
+
+  <div class="game-card phasmophobia">
+    <div class="game-title">Phasmophobia</div>
+  </div>
+
 </body>
 </html>
